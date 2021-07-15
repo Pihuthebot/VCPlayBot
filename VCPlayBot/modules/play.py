@@ -1043,14 +1043,14 @@ async def jiosaavn(client: Client, message_: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @VCPlayBot to your Group and try again request here @AwesomeSupport with your group link</b>",
+                        "\n\nOr manually add @SankiRobot to your Group and try again request here @AwesomeSupport with your group link</b>",
                     )
     try:
         await USER.get_chat(chid)
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            "<i> helper Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually request here @AwesomeSupport with your group link</i>"
+            "<i> helper Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually request here @BrandSanki with your group link</i>"
         )
         return
     requested_by = message_.from_user.first_name
