@@ -1,5 +1,5 @@
 import os
-from VCPlayBot.config import ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,UPDATES_CHANNEL
+from VCPlayBot.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,UPDATES_CHANNEL
 class Messages():
       START_MSG = "**Hello 👋 [{}](tg://user?id={})!**\n\n🤖 I am an advanced bot created for playing music in the voice chats of Telegram Groups & Channels.\n\n✅ Send me /help for more info."
       HELP_MSG = [
@@ -29,11 +29,12 @@ f"""
 
 **=>> Song Playing 🎧**
 
-- /play: Play song using youtube music
+- /play: Play the requestd song
 - /play [yt url] : Play the given yt url
 - /play [reply yo audio]: Play replied audio
 - /dplay: Play song via deezer
 - /splay: Play song via jio saavn
+- /ytplay: Directly play song via Youtube Music
 
 **=>> Playback ⏯**
 
@@ -79,6 +80,7 @@ channel is also can be used instead of c ( /cplay = /channelplay )
 f"""
 **=>> More tools 🧑‍🔧**
 
+- /musicplayer [on/off]: Enable/Disable Music player
 - /admincache: Updates admin info of your group. Try if bot isn't recognize admin
 - /userbotjoin: Invite @{ASSISTANT_NAME} Userbot to your chat
 
